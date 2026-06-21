@@ -87,6 +87,39 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 5000);
     }
 
+    const contactForm = document.getElementById('contact-form');
+
+    if (contactForm && messageBox) {
+        contactForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: {
+                        Accept: 'application/json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Form submission failed');
+                }
+
+                messageBox.textContent = 'Message sent successfully! I will get back to you soon.';
+                messageBox.className = 'form-message success';
+                messageBox.style.display = 'block';
+                contactForm.reset();
+            } catch (error) {
+                messageBox.textContent = 'Failed to send message. Please try again later.';
+                messageBox.className = 'form-message error';
+                messageBox.style.display = 'block';
+            }
+
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+    }
+
     // 6. Project gallery modal
     const projectModal = document.getElementById('project-modal');
     const projectModalTitle = document.getElementById('project-modal-title');

@@ -246,7 +246,7 @@
         <section id="contact" class="section contact">
             <div class="container">
                 <h2 class="section-title reveal">Get In <span>Touch</span></h2>
-                <p class="section-subtitle reveal">Have a project in mind or just want to say hi? My inbox is always open!</p>
+                <p class="section-subtitle reveal">Have a project in mind or just want to say hi? You can contact me anytime!</p>
                 
                 <!-- Success/Error Message Area -->
                 <div id="form-message" class="form-message"></div>
@@ -275,21 +275,20 @@
                             </div>
                         </div>
                     </div>
-                    
-                    <form action="index.php" method="POST" class="contact-form reveal" id="contact-form">
+                    <form class="contact-form reveal" id="contact-form" action="https://formspree.io/f/mlgyrnkd" method="POST">
                         <div class="form-group">
-                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                            <input type="text" name="subject" placeholder="Subject" required>
                         </div>
                         <div class="form-group">
-                            <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                            <textarea name="message" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-full">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
                 </div>
             </div>
