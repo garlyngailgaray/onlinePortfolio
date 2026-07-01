@@ -1,13 +1,13 @@
 # Personal Portfolio Website
 
-A modern, responsive portfolio website built with HTML, CSS, JavaScript, and PHP.
+A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 
 ## 🚀 Features
 
 - Fully responsive design
 - Dark theme with smooth animations
 - Sections: Home, About, Experience, Skills, Projects, Certificates, Contact
-- Working contact form with PHP backend
+- Working contact form 
 - Modern UI with interactive elements
 
 ## 🛠️ Technologies Used
