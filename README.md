@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-A modern, responsive portfolio website built with HTML, CSS, JavaScript, and PHP.
+A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 
 ## 🚀 Features
 
