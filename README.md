@@ -7,7 +7,7 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript.
 - Fully responsive design
 - Dark theme with smooth animations
 - Sections: Home, About, Experience, Skills, Projects, Certificates, Contact
-- Working contact form with PHP backend
+- Working contact form 
 - Modern UI with interactive elements
 
 ## 🛠️ Technologies Used
